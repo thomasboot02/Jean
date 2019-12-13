@@ -1,0 +1,85 @@
+body {
+      text-align: center;
+      margin: 0;
+      font-family: sans-serif;
+      background: url(achtergrondsite.png);
+      background-size: 200px;
+      background-position: 0 5em;
+
+}
+
+#main {
+      width: 50%;
+      height: 100%;
+      margin: 0 auto;
+      margin-top: 100px;
+      text-align: left;
+      background-color: rgb(255, 255, 77);
+      padding: 2em;
+      display: inline-block;
+      border-radius: 50px;
+}
+
+#balk {
+      background: dodgerblue;
+      color: white;
+      position: fixed;
+      width: 100%;
+      height: 4em;
+      margin: 0;
+      padding: 0;
+      padding-left: 10px;
+      top: 0;
+      font-size: 20px;
+}
+
+#buttonholder {
+      float: center;
+}
+
+#buttonholder a {
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      padding: 15px;
+      margin: 0;
+      height: 1.7em;
+      padding-top: 1.5em;
+      border-right-color: black;
+}
+
+#buttonholder a:hover {
+      background: rgb(10, 124, 235);
+      
+}
+
+.buttoninput {
+      background-color: dodgerblue;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      float: center;
+      margin-left: 19px;
+
+}
+
+.formulier {
+      border-radius: 100px;
+      background-color: #f2f2f2;
+      padding: 40px;
+      width: 45%;
+}
+
+.input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+
+}
