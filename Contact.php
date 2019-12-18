@@ -22,7 +22,7 @@
         <div class="formulier">
             <form method="post" action="mailto:jean.v.d.berge@outlook.com">
                 Naam:<br>
-                <input class="input" name="naam" size="39" maxlength="40" placeholder="Uw naam.."><br>
+                <input class="input" name="naam" size="39" maxlength="40" placeholder="Uw naam.." ><br>
                 Adres:<br>
                 <input class="input" name="adres" size="39" maxlength="30" placeholder="Uw adres.."><br>
                 Postcode:<br>
@@ -84,6 +84,35 @@
                 </tr>
             </table>
         </div>
+
+<?php
+$servername = "127.0.0.1";
+$username = "henk";
+$password = "jebentdik";
+$dbname = "u392629804_groep2";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+mysqli_connect($servername,$username, $password);
+mysql_select_db($dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT Naam-begeleider, Geslacht-begeleider FROM Begeleiders";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "Naam-beleider: " . $row["Naam-begeleider"]. " - Geslacht begeleider: " . $row["Geslacht begeleider"]. " <br>";
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+?>
 
 </body>
 

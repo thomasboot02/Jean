@@ -26,7 +26,7 @@
             toernooien en met het merchandising van spelers, hun apparatuur en de logo&rsquo;s en/of kleding. Zo is de verkoop van een (nieuw uitgebrachte) game tijdens een toernooi vele malen hoger dan in de winkel of online.
         </t>
         <div>
-            <img src="eerstegame.png" height="40%" width="40%" align="right">
+            <img src="dikkepoep.png" height="40%" width="40%" align="right">
         </div>
     </div>
 </body>
