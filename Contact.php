@@ -112,6 +112,15 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 $conn->close();
+
+
+include 'db_connection.php';
+$conn = OpenCon();
+$sql = "SELECT Naam-begeleider FROM Begeleiders" ;
+$result = mysql_query($sql);
+CloseCon($conn);
+
+
 ?>
 
 </body>
