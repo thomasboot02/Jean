@@ -84,42 +84,12 @@
                 </tr>
             </table>
         </div>
-
 <?php
-$servername = "127.0.0.1";
-$username = "henk";
-$password = "jebentdik";
-$dbname = "u392629804_groep2";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-mysqli_connect($servername,$username, $password);
-mysql_select_db($dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "SELECT Naam-begeleider, Geslacht-begeleider FROM Begeleiders";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "Naam-beleider: " . $row["Naam-begeleider"]. " - Geslacht begeleider: " . $row["Geslacht begeleider"]. " <br>";
-    }
-} else {
-    echo "0 results";
-}
-$conn->close();
-
-
 include 'db_connection.php';
 $conn = OpenCon();
 $sql = "SELECT Naam-begeleider FROM Begeleiders" ;
 $result = mysql_query($sql);
 CloseCon($conn);
-
 
 ?>
 
