@@ -10,11 +10,9 @@
     <nav id="balk" align="center">
         <div id="buttonholder">
             <a href="index.php">Home</a>
-            <a href="Geschiedenis.php">Geschiedenis</a>
-            <a href="Olympisch.php">Olympisch</a>
-            <a href="Soorten.php">Soorten</a>
+            <a href="Opvragen.php">Opvragen</a>
             <a href="Gameplay.php">Gameplay</a>
-            <a href="Contact.php">Contact</a>
+            <a href="Aanmelden.php">Aanmelden</a>
         </div>
     </nav>
     <div id="main" style="text-align: justify;">
