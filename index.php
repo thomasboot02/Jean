@@ -11,8 +11,8 @@
         <div id="buttonholder">
             <a href="index.php">Home</a>
             <a href="Opvragen.php">Opvragen</a>
-            <a href="Gameplay.php">Gameplay</a>
             <a href="Aanmelden.php">Aanmelden</a>
+            <a href="extra.php">Hoe het werkt</a>
         </div>
     </nav>
     <div id="main" style="text-align: justify;">
@@ -21,7 +21,16 @@
         <t>De opdracht is simpel en duidelijk. De opdracht is om een site te maken en daaraan een MYSQL database aan te koppelen. Aan de hand van formulieren moet 
         zinvolle informatie worden opgevraagd uit de database. Ook moet aan de hand van formulieren data in de database gestopt kunnen worden.</t>
         <h3 align ='left'> Wie zijn wij?</h3>
-        <t> Deze opdracht is gemaakt in een viertal. Hieronder ziet u gegevens om zo contact met ons op te nemen. </t>
+        <t> Deze opdracht is gemaakt in een viertal. </br> </br>
+        <b>Eerst een voorstelrondje.</b></br>
+    
+         Ik ben <b>Rob</b>, ik ben 17 jaar oud en ik houd super veel van informatica.</br>
+         Ik ben <b>Jaap-Jan</b>, ik ben 17 jaar oud en ik houd super veel van informatica.</br>
+         Ik ben <b>Jean</b>, ik ben 17 jaar oud en ik houd super veel van informatica.</br>
+         Ik ben <b>Thomas</b>, ik ben 17 jaar oud. Ik woon ik Kapelle, ik zit in VWO6 en hopelijk studeer ik volgend jaar.
+        Ik ben van plan om volgend jaar Data-science te gaan studeren. </br>
+        
+        Hieronder ziet u gegevens om zo contact met ons op te nemen. </t>
             <table width="100%">
                 <tr>
                     <th>Namen</th>

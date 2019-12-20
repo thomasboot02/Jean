@@ -11,8 +11,8 @@
         <div id="buttonholder">
             <a href="index.php">Home</a>
             <a href="Opvragen.php">Opvragen</a>
-            <a href="Gameplay.php">Gameplay</a>
             <a href="Aanmelden.php">Aanmelden</a>
+             <a href="extra.php">Hoe het werkt</a>
         </div>
     </nav>
     <div id="main" style="text-align: justify;">
@@ -69,6 +69,8 @@
         </table>
     </div>
 
+
+   
 </body>
 
 </html>
