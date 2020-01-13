@@ -12,7 +12,7 @@
             <a href="index.php">Home</a>
             <a href="Opvragen.php">Opvragen</a>
             <a href="Aanmelden.php">Aanmelden</a>
-            <a href="extra.php">Hoe het werkt</a>
+            <a href="Hoehetwerkt.php">Hoe het werkt</a>
         </div>
     </nav>
     <div id="main" style="text-align: justify;">
@@ -25,7 +25,7 @@
         <b>Eerst een voorstelrondje.</b></br>
     
          Ik ben <b>Rob</b>, ik ben 17 jaar oud en ik houd super veel van informatica.</br>
-         Ik ben <b>Jaap-Jan</b>, ik ben 17 jaar oud en ik houd super veel van informatica.</br>
+         Ik ben <b>Jaap-Jan</b>, ik ben 18 jaar oud en ik houd super veel van informatica.</br>
          Ik ben <b>Jean</b>, ik ben 17 jaar oud en ik houd super veel van informatica.</br>
          Ik ben <b>Thomas</b>, ik ben 17 jaar oud. Ik woon ik Kapelle, ik zit in VWO6 en hopelijk studeer ik volgend jaar.
         Ik ben van plan om volgend jaar Data-science te gaan studeren. </br>
@@ -69,7 +69,33 @@
                     <td><a href="https://www.google.com/maps/place/Capelleweg+13,+4416+PN+Kruiningen/@51.4681765,4.0378085,682m/data=!3m2!1e3!4b1!4m5!3m4!1s0x47c464e70dee67ff:0x6108edbfffbf84a0!8m2!3d51.4681765!4d4.0399972" target=" blank ">Capelleweg 13 Kruiningen</a></td>
                 </tr>
             </table>
-        </div>
-</body>
+        
+<?php
+$servername = "45.13.252.1";
+$username = "u392629804_usergroep2";
+$password = "mrMbF]C4";
+$dbname = "u392629804_groep2";
 
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT Naam, Telefoonnummer, Emailadres FROM Leden";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "Naam: " . $row["Naam"]. " - Telefoonnummer: " . $row["Telefoonnummer"]. " - Emailadres: " . $row["Emailadres"]. "<br>";
+	}
+} else {
+    echo "0 results";
+}
+$conn->close();
+?>
+</div>
+</body>
 </html>

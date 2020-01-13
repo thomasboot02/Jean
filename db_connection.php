@@ -1,7 +1,7 @@
 <?php
 function OpenCon()
 {
-    $dbhost = "127.0.0.1";
+    $dbhost = "45.13.252.1";
     $dbuser = "u392629804_usergroep2";
     $dbpass = "mrMbF]C4";
     $db = "u392629804_groep2";

@@ -12,7 +12,7 @@
             <a href="index.php">Home</a>
             <a href="Opvragen.php">Opvragen</a>
             <a href="Aanmelden.php">Aanmelden</a>
-            <a href="extra.php">Hoe het werkt</a>
+            <a href="Hoehetwerkt.php">Hoe het werkt</a>
         </div>
     </nav>
     <div id="main" style="text-align: justify;">
@@ -107,7 +107,7 @@ $sKalenderkop .= ' ' . $sJaar;
 unset($aEngels, $aNederlands);
  
 // Bepalen met welke weekdag de maand begint
-$sEersteWeekdag = date('D', $iEersteDagVanDeMaand) 
+$sEersteWeekdag = date('D', $iEersteDagVanDeMaand) ;
 // Aantal lege cellen in de eerste week
 switch ($sEersteWeekdag) {
     case 'Mon':
